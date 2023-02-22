@@ -5,6 +5,8 @@
   "main": "app.js",
   "type": "module",
   "scripts": {
+    "start": "node dist/app.js",
+    "build": "tsc",
     "test": "jest",
     "prepare": "husky install",
     "-----": "---------CI----------",
@@ -12,16 +14,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/agonsant/demo-express-configs.git"
+    "url": "git+https://github.com/Fleyvad/202301-w6ch2-paco-leyva.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/agonsant/demo-express-configs/issues"
+    "url": "https://github.com/Fleyvad/202301-w6ch2-paco-leyva/issues"
   },
-  "homepage": "https://github.com/agonsant/demo-express-configs#readme",
+  "homepage": "https://github.com/Fleyvad/202301-w6ch2-paco-leyva#readme",
   "devDependencies": {
+    "@types/debug": "^4.1.7",
     "@types/jest": "^29.4.0",
     "@types/node": "^18.14.0",
     "@typescript-eslint/eslint-plugin": "^5.53.0",
@@ -33,5 +36,11 @@
     "prettier": "^2.8.4",
     "ts-jest": "^29.0.5",
     "typescript": "^4.9.5"
+  },
+  "dependencies": {
+    "@types/express": "^4.17.17",
+    "debug": "^4.3.4",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2"
   }
 }
