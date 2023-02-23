@@ -1,9 +1,13 @@
 import dotenv from 'dotenv';
 dotenv.config();
 import express from 'express';
-import debugCreator from 'debug';
+// Import bunyan from 'bunyan';
+import debug from 'debug';
 
-const debug = debugCreator('server');
+/*
+Const log = bunyan.createLogger({ name: 'DemoApp' });
+log.level((process.env.BUNYAN_LEVEL as Loglevel) ?? 'info');
+*/
 const app = express();
 const port = process.env.PORT ?? 3000;
 
